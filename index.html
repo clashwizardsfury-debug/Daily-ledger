@@ -533,7 +533,7 @@
             if (entries.length > 0) {
                 const isNeg = totalProfit < 0;
                 const signClass = isNeg ? 'profit-neg' : 'profit-pos';
-                profitHTML = `<div class="day-profit ${signClass}">$${totalProfit.toFixed(0)}</div>`;
+                profitHTML = `<div class="day-profit ${signClass}">$${totalProfit.toFixed(1)}</div>`;
             }
 
             dayCell.innerHTML = `
